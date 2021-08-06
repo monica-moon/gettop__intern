@@ -15,4 +15,4 @@ def click_on_user_icon(context):
 @then( "Verify log in form opens" )
 def def verify_login_form_opens(context):
     actual_result = context.driver.find_element (By.CSS_SELECTOR, "woocommerce-form woocommerce-form-login login" ).text
-    assert actual_result == expected_result, f'Error {actual_result}, but expected {expected_result}'
+    assert actual_result == expected_result, f'Error {actual_result}, but got expected {expected_result}'
